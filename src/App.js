@@ -11,8 +11,10 @@ function App() {
 
 function Logo() {
   return (
-    <div>
-      <h1>Easy Notes ✍️</h1>
+    <div className="logo">
+      <h1>
+        Easy Notes <span>✍🏼</span>
+      </h1>
     </div>
   );
 }
@@ -20,21 +22,21 @@ function Logo() {
 function Form() {
   return (
     <form>
-      <div>
+      <div className="input">
         <label>Username</label>
-        <input></input>
+        <input />
       </div>
-      <div>
+      <div className="input">
         <label>Password</label>
-        <input type="password"></input>
+        <input type="password" />
       </div>
-      <div>
-        <input type="checkbox"></input>
+      <div className="checkbox">
+        <input type="checkbox" />
         <label>Continuar logado?</label>
       </div>
-      <div>
-        <button>Cadastrar</button>
-        <button>Logar</button>
+      <div className="buttons">
+        <button className="cadastro">Cadastrar</button>
+        <button className="login">Logar</button>
       </div>
     </form>
   );
